@@ -42,7 +42,7 @@ export function Car({ data } : Props) {
                     </Rent>
 
                     <Type>
-                        {/* <GasolineSvg height={200} width={200} /> */}
+                        <GasolineSvg height={17} width={17} fill='black'/>
                     </Type>
                 </About>
             </Details>

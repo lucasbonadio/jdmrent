@@ -1,5 +1,5 @@
-import React from 'react';
-import AppLoading from 'expo-app-loading';
+import React, { useCallback } from 'react';
+import * as SplashScreen from 'expo-splash-screen';
 import { ThemeProvider } from 'styled-components';
 import {
   useFonts,
@@ -26,8 +26,14 @@ export default function App() {
     Archivo_600SemiBold
   })
 
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync()
+    }
+  }, [fontsLoaded])
+
   if (!fontsLoaded) {
-    return <AppLoading />
+    return null;
   }
 
   return (

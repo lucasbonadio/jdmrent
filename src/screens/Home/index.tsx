@@ -1,11 +1,12 @@
 import React from 'react'
 import { StatusBar } from 'react-native'
 import { RFValue } from 'react-native-responsive-fontsize'
+import Icon from 'react-native-vector-icons/Entypo'
 
 
 import { Car } from '../../components/Car'
 
-import Logo from '../../assets/logo.svg'
+import Logo from '../../assets/rent.svg'
 
 import {
     Container, 
@@ -45,9 +46,10 @@ const Home = () => {
             />
             <Header>
                 <HeaderContent>
-                    <Logo
-                        width={RFValue(108)}
-                        height={RFValue(12)}
+                    <Logo 
+                        height={100}
+                        width={100}
+                        fill='#7A7A80'
                     />
                     <TotalCars>Total de 12 Carros</TotalCars>
                 </HeaderContent>
@@ -57,9 +59,7 @@ const Home = () => {
             data={[1,2,3,4,5,6]}
             keyExtractor={item => String(item)}
             renderItem={({ item }) => <Car data={carDataOne} />}            
-            />
-            
-
+            />          
         </Container>
     )
 }
