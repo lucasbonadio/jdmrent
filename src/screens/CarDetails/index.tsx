@@ -25,7 +25,9 @@ import {
     Price,
     About,
     Accessories,
+    Footer,
 } from './styles';
+import { Button } from "../../components/Button";
 
 export default function CarDetails() {
     return (
@@ -52,18 +54,29 @@ export default function CarDetails() {
                 </Details>
 
                 <Accessories>
-                    <Accessory name="335Km/h" icon={speed}/>
-                    <Accessory name="4.3s" icon={acceleration}/>
-                    <Accessory name="321hp" icon={steeringwheel}/>
-                    <Accessory name="Gasolina" icon={petrol}/>
-                    <Accessory name="Manual" icon={transmission}/>
-                    <Accessory name="2 pessoas" icon={people}/>
+                    <Accessory name="335Km/h" icon={speed} />
+                    <Accessory name="4.3s" icon={acceleration} />
+                    <Accessory name="321hp" icon={steeringwheel} />
+                    <Accessory name="Gasolina" icon={petrol} />
+                    <Accessory name="Manual" icon={transmission} />
+                    <Accessory name="2 pessoas" icon={people} />
                 </Accessories>
 
                 <About>
                     O lendario supra. Um dos mais iconicos carros do mercado jdm
+                    O lendario supra. Um dos mais iconicos carros do mercado jdm
+                    O lendario supra. Um dos mais iconicos carros do mercado jdm
+                    O lendario supra. Um dos mais iconicos carros do mercado jdm
+                    O lendario supra. Um dos mais iconicos carros do mercado jdm
+                    O lendario supra. Um dos mais iconicos carros do mercado jdm
                 </About>
             </Content>
+
+            <Footer>
+                <Button
+                    title="Confirmar"
+                />
+            </Footer>
 
         </Container>
     )

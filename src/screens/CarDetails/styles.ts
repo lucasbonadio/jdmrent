@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { getStatusBarHeight } from 'react-native-iphone-x-helper'
+import { getStatusBarHeight, getBottomSpace } from 'react-native-iphone-x-helper'
 import { RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
@@ -22,7 +22,7 @@ export const CarImages = styled.View`
 export const Content = styled.ScrollView.attrs({
     contentContainerStyle: {
         padding: 24,
-        alignItems: 'center'
+        alignItems: 'center'        
     },
     showsVerticalScrollIndicator: false
 })``
@@ -82,4 +82,9 @@ export const Accessories = styled.View`
     align-items: center;
     justify-content: space-between;
     margin-top: 16px;
+`
+export const Footer = styled.View`
+    width: 100%;
+    background-color: ${({ theme }) => theme.colors.background_secondary};
+    padding: 24px 24px ${getBottomSpace() + 24}px;
 `
