@@ -1,6 +1,15 @@
 import React from "react";
+
+import { Accessory } from "../../components/Accessory";
 import { BackButton } from "../../components/BackButton";
 import { ImageSlider } from "../../components/ImageSlider";
+
+import speed from '../../assets/speed.svg'
+import acceleration from '../../assets/acceleration.svg'
+import steeringwheel from '../../assets/steeringwheel.svg'
+import petrol from '../../assets/petrol.svg'
+import transmission from '../../assets/transmission.svg'
+import people from '../../assets/people.svg'
 
 import {
     Container,
@@ -14,7 +23,8 @@ import {
     Rent,
     Period,
     Price,
-    About
+    About,
+    Accessories,
 } from './styles';
 
 export default function CarDetails() {
@@ -40,6 +50,15 @@ export default function CarDetails() {
                         <Price>R$ 580</Price>
                     </Rent>
                 </Details>
+
+                <Accessories>
+                    <Accessory name="335Km/h" icon={speed}/>
+                    <Accessory name="4.3s" icon={acceleration}/>
+                    <Accessory name="321hp" icon={steeringwheel}/>
+                    <Accessory name="Gasolina" icon={petrol}/>
+                    <Accessory name="Manual" icon={transmission}/>
+                    <Accessory name="2 pessoas" icon={people}/>
+                </Accessories>
 
                 <About>
                     O lendario supra. Um dos mais iconicos carros do mercado jdm

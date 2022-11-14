@@ -35,7 +35,6 @@ const Home = () => {
         },
         thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRUvdz3mSse4J4n_cnGKuf_1gwjatKRO0cpQ&usqp=CAU'
     }
-    
 
     return (
         <Container>

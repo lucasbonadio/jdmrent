@@ -32,7 +32,7 @@ export const Details = styled.View`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 38px;
+    margin-top: 28px;
 `
 
 export const Description = styled.View``
@@ -71,5 +71,15 @@ export const About = styled.Text`
     color: ${({ theme }) => theme.colors.text};
     font-size: ${RFValue(15)}px;
     text-align: justify;
-    margin-top: 23px;
+    margin-top: 16px;
+    line-height: ${RFValue(25)}px;
+`
+
+export const Accessories = styled.View`
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
 `
