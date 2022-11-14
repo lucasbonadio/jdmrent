@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler'
 import React, { useCallback } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
 import { ThemeProvider } from 'styled-components';
@@ -12,9 +13,10 @@ import {
   Archivo_600SemiBold
 } from '@expo-google-fonts/archivo'
 
-import Home from './src/screens/Home';
-
 import theme from './src/styles/theme';
+
+import CarDetails from './src/screens/CarDetails';
+import Home from './src/screens/Home';
 
 
 export default function App() {
@@ -38,7 +40,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Home />
+      <CarDetails />
     </ThemeProvider>
   );
 }
